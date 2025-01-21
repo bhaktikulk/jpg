@@ -31,17 +31,6 @@ app.get("/", (res, req) => {
    res.json("Hello");
 }
 
-// Schema and Model
-const EmployeeSchema = new mongoose.Schema({
-  name: String,
-  email: String,
-  dob: String,
-  password: String,
-  image: String, // Field to store image URL
-});
-
-const EmployeeModel = mongoose.model("Employee", EmployeeSchema);
-
 // Routes
 
 // Login Endpoint
